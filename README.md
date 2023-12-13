@@ -28,15 +28,16 @@ Go to the [Dockerfile](./image/Dockerfile) file & update the [New Relic base ima
 <br> List of the base image can be found at [https://gallery.ecr.aws/x6n7b2o2?page=1](https://gallery.ecr.aws/x6n7b2o2?page=1)
 
 > [!TIP] 
-> If you are building your own project, make sure to include the same [snippet](https://github.com/Limalbert96/Dockerized-Lambda-NR/blob/main/image/ Dockerfile#L5-L20) within the Dockerfile and update the file as needed. You can verify the location of the New Relic extension locally by running the following command in your terminal.
+> If you are building your own project, make sure to include the same [snippet](https://github.com/Limalbert96/Dockerized-Lambda-NR/blob/main/image/Dockerfile#L5-L20) within the Dockerfile and update the file as needed. You can verify the location of the New Relic extension locally by running the following command in your terminal.
 
+> 
 ```
 cd image
 docker build -t docker-image:test .
 docker run -p 9000:8080 docker-image:test
 ```
 
-<br><br>![Alt text](<./screenshots/NR Extension within Dockerfile.png>) 
+![Alt text](<./screenshots/NR Extension within Dockerfile.png>) 
 
 ### 2. Update Lambda Environment Variables
 Go to the [docker-lambda-aws-stack.ts](./lib/docker-lambda-aws-stack.ts) file & update the [`environment`](./lib/docker-lambda-aws-stack.ts#L47-L57) variables
