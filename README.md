@@ -33,7 +33,7 @@ Go to the [Dockerfile](./image/Dockerfile) file & update the [New Relic base ima
 > cd image
 > docker build -t docker-image:test .
 > docker run -p 9000:8080 docker-image:test
-```
+> ```
 ![Alt text](<./screenshots/NR Extension within Dockerfile.png>) 
 
 ### 2. Update Lambda Environment Variables
