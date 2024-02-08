@@ -5,7 +5,7 @@ This stack will create dockerized lambda (Python 3.11 - ARM_64) that will simula
 It will check within DynamoDB table for `user` data. If user exists, then it will increment visit-count.
 
 * [AWS CDK](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_lambda-readme.html) is the Infrastructure as Code tool to provision and manage Lambda, DynamoDB, & role settings.
-* [AWS Powertool](https://docs.powertools.aws.dev/lambda/python/latest/core/tracer/) is the library that is used to generate tracing.
+* [AWS Powertool for AWS Lambda (Python)](https://docs.powertools.aws.dev/lambda/python/latest/core/tracer/) is the library that is used to generate tracing.
 * [New Relic](one.newrelic.com) is the Observability tool of choice that will present the Lambda's Distributed Tracing, Logs, & Invocation Details.
 
 ##  Prerequisites
@@ -88,7 +88,7 @@ Test Event:
 ### 2. Monitor within New Relic
 Go to [one.newrelic.com](one.newrelic.com) > All Entities > Go to the Lambda Entity > Verify Distributed Tracing, Logs, & Invocation Detail.
 > [!WARNING]  
-> You might see log message `Startup check failed: Missing handler file  (NEW_RELIC_LAMBDA_HANDLER=function.handler)`. This is an existing bug, and can be ignored.
+> You might see log message `Startup check failed: Missing handler file (NEW_RELIC_LAMBDA_HANDLER=function.handler)`. This is an existing bug, and can be ignored.
 
 ## Results
 **SUMMARY & INVOCATION DETAILS**
