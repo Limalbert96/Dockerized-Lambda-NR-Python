@@ -1,4 +1,4 @@
-# Building Dockerized Lambda with AWS CDK & Cloud Monitoring with New Relic
+# Building Dockerized Python Lambda with AWS CDK & Cloud Monitoring with New Relic
 
 ##  Background
 This stack will create dockerized lambda (Python 3.11 - ARM_64) that will simulate visitor count.
