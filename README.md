@@ -63,6 +63,8 @@ Go to the [docker-lambda-aws-stack.ts](./lib/docker-lambda-aws-stack.ts) file & 
     - `RequestHandler` implementation: `com.newrelic.java.HandlerWrapper::handleRequest`
     - `RequestStreamHandlerWrapper` implementation: `com.newrelic.java.HandlerWrapper::handleStreamsRequest`
 
+![Alt text](<./screenshots/Lambda ImageConfige.png>) 
+
 ### 4. Set AWS account access
 Run `aws configure`
 <br> Enter your AWS Access Key ID, AWS Secret Access Key, & Default region name.
